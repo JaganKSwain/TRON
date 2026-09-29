@@ -1,0 +1,144 @@
+# ==============================================================================
+# Python & Virtual Environments
+# ==============================================================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+
+# Linters & Type Checking
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter & Claude
+.ipynb_checkpoints
+.claude/
+
+# ==============================================================================
+# Deep Learning, ML Checkpoints & Heavy Caches
+# ==============================================================================
+*.pt
+*.pth
+*.ckpt
+*.h5
+runs/
+checkpoints/
+mask_cache/
+agrobot/masks/
+backgrounds/
+agrobot/backgrounds/
+scratch/
+agrobot/scratch/
+
+# Large model exports & intermediate calibration tensors
+*.onnx
+*.npy
+*.npz
+*.pb
+**/variables/
+
+# ==============================================================================
+# Datasets & Raw Foliar Imagery (PlantVillage, etc.)
+# ==============================================================================
+Dataset/
+dataset/
+/data/
+*.JPG
+*.jpg
+*.jpeg
+# Preserve documentation, reports, and code directories
+!agrobot/src/agrobot/data/
+!reports/**
+!artifacts/**
+!Layer1/confusion_matrix.png
+
+# ==============================================================================
+# Embedded C/C++ & Renesas e² studio (uT-Kernel 3.0 / RA8P1 / GCC / FSP)
+# ==============================================================================
+# Build output directories
+Debug/
+Release/
+[Dd]ebug/
+[Rr]elease/
+
+# Compiled objects, binaries, maps, and listings
+*.o
+*.obj
+*.d
+*.elf
+*.bin
+*.hex
+*.srec
+*.map
+*.a
+*.lib
+
+# Renesas / J-Link debugger and diagnostic logs
+JLinkLog.log
+*.log
+
+# Language server & Clangd cache
+.clangd
+.clangd/
+
+# Eclipse / e² studio workspace-specific artifacts
+.metadata/
+**/.settings/language.settings.xml
+language.settings.xml
+
+# ==============================================================================
+# IDEs, Editors & OS Files
+# ==============================================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code (preserve shared workspace settings)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains / CLion / PyCharm
+.idea/
+
+# Editor swap files
+*.swp
+*.swo
+*~
+*.bak
+
+# Temporary files
+*.tmp
+*.temp

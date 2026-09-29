@@ -1,0 +1,19 @@
+# Embedded / export toolchain for the Renesas RA8P1 (Ethos-U55).
+# Installed separately from requirements.txt because TensorFlow is heavy and
+# this chain is only needed for the MCU export path -- a failure here must not
+# block training.
+onnx>=1.17
+onnxruntime>=1.20
+onnxsim>=0.4.36
+
+# PyTorch -> ONNX -> TFLite conversion. onnx2tf pulls in tensorflow (CPU is fine;
+# we only use it to convert graphs, never to train).
+tensorflow>=2.18
+onnx2tf>=1.29
+onnx-graphsurgeon
+sng4onnx
+psutil
+
+# Arm Vela: compiles TFLite INT8 -> Ethos-U55 command stream. Also our
+# authoritative check for NPU-offload % and SRAM/flash fit.
+ethos-u-vela>=5.1.0

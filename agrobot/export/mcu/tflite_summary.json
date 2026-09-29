@@ -1,0 +1,52 @@
+{
+  "file": "mcu_full_integer_quant.tflite",
+  "size_kb": 960.0,
+  "ops": {
+    "CONV_2D": 35,
+    "DEPTHWISE_CONV_2D": 17,
+    "ADD": 10,
+    "PAD": 5,
+    "MEAN": 1,
+    "FULLY_CONNECTED": 1
+  },
+  "n_ops": 69,
+  "tensor_dtypes": {
+    "int8": 124,
+    "int32": 58
+  },
+  "n_float_tensors": 0,
+  "input": {
+    "name": "serving_default_images:0",
+    "shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "dtype": "int8"
+  },
+  "output": {
+    "name": "PartitionedCall:0",
+    "shape": [
+      1,
+      15
+    ],
+    "dtype": "int8"
+  },
+  "fidelity": {
+    "n": 32,
+    "logit_pearson_r_mean": 0.9904043087095857,
+    "logit_pearson_r_min": 0.9509208669647271,
+    "top1_agreement": 1.0,
+    "max_abs_logit_diff": 0.7685538530349731,
+    "input_quant": {
+      "scale": 0.01838504709303379,
+      "zero_point": -13
+    },
+    "output_quant": {
+      "scale": 0.02182244323194027,
+      "zero_point": -40
+    },
+    "layout_ok": true
+  }
+}
