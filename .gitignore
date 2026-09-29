@@ -52,11 +52,15 @@ dmypy.json
 runs/
 checkpoints/
 mask_cache/
+masks/
 agrobot/masks/
+Layer2/masks/
 backgrounds/
 agrobot/backgrounds/
+Layer2/backgrounds/
 scratch/
 agrobot/scratch/
+Layer2/scratch/
 
 # Large model exports & intermediate calibration tensors
 *.onnx
@@ -76,8 +80,11 @@ dataset/
 *.jpeg
 # Preserve documentation, reports, and code directories
 !agrobot/src/agrobot/data/
+!Layer2/src/agrobot/data/
 !reports/**
+!**/reports/**
 !artifacts/**
+!**/artifacts/**
 !Layer1/confusion_matrix.png
 
 # ==============================================================================

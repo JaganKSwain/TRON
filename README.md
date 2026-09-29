@@ -141,7 +141,7 @@ TRON/
 │   │   └── model_data.h                            # INT8 compiled model binary array
 │   └── mtk3_bsp2/                                  # μT-Kernel 3.0 BSP2 source tree
 │
-├── agrobot/                                        # Python deep learning & edge deployment package
+├── Layer2/                                         # Layer 2 AI: Python deep learning & edge deployment package
 │   ├── src/agrobot/
 │   │   ├── data/                                   # Manifest parsing, grouped splits, ExG segmentation
 │   │   ├── models/                                 # ConvNeXt teacher, GeM pooling, MobileNetV2 student
@@ -175,8 +175,8 @@ TRON/
 ### 7.1 Python AI Environment & Testing
 Ensure **Python 3.11** is installed:
 ```powershell
-# Navigate to the Python agrobot module
-cd "agrobot"
+# Navigate to the Python Layer2 module
+cd "Layer2"
 
 # Install package in editable mode with dependencies
 pip install -e .
